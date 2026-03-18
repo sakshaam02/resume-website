@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sakshaam Sharma</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="desktop">
+
+  <!-- MENU BAR -->
+  <div id="menubar">
+    <div class="mbl">
+      <span class="mbi b">Sakshaam.sharma</span>
+      <span class="mbi">File</span>
+      <span class="mbi">View</span>
+      <span class="mbi">Go</span>
+      <span class="mbi">Window</span>
+    </div>
+    <div class="mbr">
+      <svg width="28" height="14" viewBox="0 0 28 14" fill="none">
+        <rect x=".5" y=".5" width="23" height="13" rx="3.5" stroke="rgba(255,255,255,.55)"/>
+        <rect x="1.5" y="1.5" width="19" height="11" rx="2.5" fill="#32d74b"/>
+        <path d="M24.5 4.5v5a2.5 2.5 0 000-5z" fill="rgba(255,255,255,.45)"/>
+      </svg>
+      <span style="font-size:12px;color:rgba(255,255,255,.78);">98%</span>
+      <svg width="16" height="12" viewBox="0 0 16 12" fill="rgba(255,255,255,.75)">
+        <path d="M8 10.5a1 1 0 100-2 1 1 0 000 2z"/>
+        <path d="M8 7.5C6.67 7.5 5.47 8.02 4.59 8.88l1.06 1.06A3.5 3.5 0 018 9a3.5 3.5 0 012.35.94l1.06-1.06A4.98 4.98 0 008 7.5z" opacity=".7"/>
+        <path d="M8 4.5c-2.1 0-4 .85-5.37 2.22l1.06 1.06A6.46 6.46 0 018 6a6.46 6.46 0 014.31 1.78l1.06-1.06A7.96 7.96 0 008 4.5z" opacity=".45"/>
+      </svg>
+      <span id="clk"></span>
+    </div>
+  </div>
+
+  <!-- LEFT ICON COLUMN -->
+  <div class="icon-col" id="col-left">
+
+    <div class="dicon" id="ic-about" onclick="openWin('about')">
+      <div class="folder-wrap">
+        <svg viewBox="0 0 56 48" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="tabA" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#72C2FF"/><stop offset="100%" stop-color="#3A90E8"/></linearGradient>
+            <linearGradient id="bodyA" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#5DBAFF"/><stop offset="45%" stop-color="#2E8AE0"/><stop offset="100%" stop-color="#1060B8"/></linearGradient>
+            <linearGradient id="glossA" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(255,255,255,0.6)"/><stop offset="55%" stop-color="rgba(255,255,255,0.05)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></linearGradient>
+            <filter id="dropA"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="rgba(0,0,0,0.5)"/></filter>
+            <clipPath id="clipA"><rect x="1" y="13" width="54" height="33" rx="5"/></clipPath>
+          </defs>
+          <g filter="url(#dropA)">
+            <path d="M3 14 L3 9 Q3 6.5 5.5 6.5 L22 6.5 Q24.8 6.5 26.2 9.5 L29.5 14 Z" fill="url(#tabA)"/>
+            <rect x="1" y="13" width="54" height="33" rx="5" fill="url(#bodyA)"/>
+          </g>
+          <rect x="1" y="13" width="54" height="18" fill="url(#glossA)" clip-path="url(#clipA)"/>
+          <rect x="2" y="13.5" width="52" height="1.2" rx="0.6" fill="rgba(255,255,255,0.5)"/>
+          <ellipse cx="28" cy="47" rx="20" ry="2" fill="rgba(0,0,0,0.22)"/>
+        </svg>
+      </div>
+      <div class="ilabel">ABOUT ME</div>
+    </div>
+
+    <div class="dicon" id="ic-edu" onclick="openWin('edu')">
+      <div class="folder-wrap">
+        <svg viewBox="0 0 56 48" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="tabB" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#DA98FF"/><stop offset="100%" stop-color="#A850F0"/></linearGradient>
+            <linearGradient id="bodyB" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#CE88FF"/><stop offset="45%" stop-color="#9840E0"/><stop offset="100%" stop-color="#7010C0"/></linearGradient>
+            <linearGradient id="glossB" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(255,255,255,0.6)"/><stop offset="55%" stop-color="rgba(255,255,255,0.05)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></linearGradient>
+            <filter id="dropB"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="rgba(0,0,0,0.5)"/></filter>
+            <clipPath id="clipB"><rect x="1" y="13" width="54" height="33" rx="5"/></clipPath>
+          </defs>
+          <g filter="url(#dropB)">
+            <path d="M3 14 L3 9 Q3 6.5 5.5 6.5 L22 6.5 Q24.8 6.5 26.2 9.5 L29.5 14 Z" fill="url(#tabB)"/>
+            <rect x="1" y="13" width="54" height="33" rx="5" fill="url(#bodyB)"/>
+          </g>
+          <rect x="1" y="13" width="54" height="18" fill="url(#glossB)" clip-path="url(#clipB)"/>
+          <rect x="2" y="13.5" width="52" height="1.2" rx="0.6" fill="rgba(255,255,255,0.5)"/>
+          <ellipse cx="28" cy="47" rx="20" ry="2" fill="rgba(0,0,0,0.22)"/>
+        </svg>
+      </div>
+      <div class="ilabel">EDUCATION</div>
+    </div>
+
+    <div class="dicon" id="ic-exp" onclick="openWin('exp')">
+      <div class="folder-wrap">
+        <svg viewBox="0 0 56 48" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="tabC" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFB260"/><stop offset="100%" stop-color="#E87020"/></linearGradient>
+            <linearGradient id="bodyC" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFA850"/><stop offset="45%" stop-color="#E06010"/><stop offset="100%" stop-color="#C04000"/></linearGradient>
+            <linearGradient id="glossC" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(255,255,255,0.6)"/><stop offset="55%" stop-color="rgba(255,255,255,0.05)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></linearGradient>
+            <filter id="dropC"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="rgba(0,0,0,0.5)"/></filter>
+            <clipPath id="clipC"><rect x="1" y="13" width="54" height="33" rx="5"/></clipPath>
+          </defs>
+          <g filter="url(#dropC)">
+            <path d="M3 14 L3 9 Q3 6.5 5.5 6.5 L22 6.5 Q24.8 6.5 26.2 9.5 L29.5 14 Z" fill="url(#tabC)"/>
+            <rect x="1" y="13" width="54" height="33" rx="5" fill="url(#bodyC)"/>
+          </g>
+          <rect x="1" y="13" width="54" height="18" fill="url(#glossC)" clip-path="url(#clipC)"/>
+          <rect x="2" y="13.5" width="52" height="1.2" rx="0.6" fill="rgba(255,255,255,0.5)"/>
+          <ellipse cx="28" cy="47" rx="20" ry="2" fill="rgba(0,0,0,0.22)"/>
+        </svg>
+      </div>
+      <div class="ilabel">EXPERIENCE</div>
+    </div>
+
+    <div class="dicon" id="ic-skills" onclick="openWin('skills')">
+      <div class="folder-wrap">
+        <svg viewBox="0 0 56 48" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="tabD" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#42E8CC"/><stop offset="100%" stop-color="#10C098"/></linearGradient>
+            <linearGradient id="bodyD" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#30E0C0"/><stop offset="45%" stop-color="#08B090"/><stop offset="100%" stop-color="#007060"/></linearGradient>
+            <linearGradient id="glossD" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(255,255,255,0.6)"/><stop offset="55%" stop-color="rgba(255,255,255,0.05)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></linearGradient>
+            <filter id="dropD"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="rgba(0,0,0,0.5)"/></filter>
+            <clipPath id="clipD"><rect x="1" y="13" width="54" height="33" rx="5"/></clipPath>
+          </defs>
+          <g filter="url(#dropD)">
+            <path d="M3 14 L3 9 Q3 6.5 5.5 6.5 L22 6.5 Q24.8 6.5 26.2 9.5 L29.5 14 Z" fill="url(#tabD)"/>
+            <rect x="1" y="13" width="54" height="33" rx="5" fill="url(#bodyD)"/>
+          </g>
+          <rect x="1" y="13" width="54" height="18" fill="url(#glossD)" clip-path="url(#clipD)"/>
+          <rect x="2" y="13.5" width="52" height="1.2" rx="0.6" fill="rgba(255,255,255,0.5)"/>
+          <ellipse cx="28" cy="47" rx="20" ry="2" fill="rgba(0,0,0,0.22)"/>
+        </svg>
+      </div>
+      <div class="ilabel">SKILLS</div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT ICON COLUMN -->
+  <div class="icon-col" id="col-right">
+
+    <div class="dicon" id="ic-certs" onclick="openWin('certs')">
+      <div class="folder-wrap">
+        <svg viewBox="0 0 56 48" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="tabE" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFE040"/><stop offset="100%" stop-color="#E0A800"/></linearGradient>
+            <linearGradient id="bodyE" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFD830"/><stop offset="45%" stop-color="#D8A000"/><stop offset="100%" stop-color="#B07800"/></linearGradient>
+            <linearGradient id="glossE" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(255,255,255,0.6)"/><stop offset="55%" stop-color="rgba(255,255,255,0.05)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></linearGradient>
+            <filter id="dropE"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="rgba(0,0,0,0.5)"/></filter>
+            <clipPath id="clipE"><rect x="1" y="13" width="54" height="33" rx="5"/></clipPath>
+          </defs>
+          <g filter="url(#dropE)">
+            <path d="M3 14 L3 9 Q3 6.5 5.5 6.5 L22 6.5 Q24.8 6.5 26.2 9.5 L29.5 14 Z" fill="url(#tabE)"/>
+            <rect x="1" y="13" width="54" height="33" rx="5" fill="url(#bodyE)"/>
+          </g>
+          <rect x="1" y="13" width="54" height="18" fill="url(#glossE)" clip-path="url(#clipE)"/>
+          <rect x="2" y="13.5" width="52" height="1.2" rx="0.6" fill="rgba(255,255,255,0.5)"/>
+          <ellipse cx="28" cy="47" rx="20" ry="2" fill="rgba(0,0,0,0.22)"/>
+        </svg>
+      </div>
+      <div class="ilabel">CERTIFICATES</div>
+    </div>
+
+    <div class="dicon" onclick="openWin('about')">
+      <div class="app-wrap" style="background:#2c2c2e;">
+        <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+          <rect width="60" height="60" fill="#2c2c2e"/>
+          <rect x="13" y="9" width="28" height="36" rx="2" fill="#f0f0f0"/>
+          <path d="M32 9 L40 17 L32 17 Z" fill="#bbb"/>
+          <rect x="32" y="9" width="8" height="8" fill="#d0d0d0"/>
+          <rect x="15" y="22" width="22" height="1.5" rx=".75" fill="#999"/>
+          <rect x="15" y="26" width="22" height="1.5" rx=".75" fill="#999"/>
+          <rect x="15" y="30" width="16" height="1.5" rx=".75" fill="#999"/>
+          <rect x="13" y="38" width="28" height="7" rx="0 0 2 2" fill="#c0392b"/>
+          <text x="27" y="44" text-anchor="middle" font-family="sans-serif" font-size="5" font-weight="700" fill="white">PDF</text>
+        </svg>
+      </div>
+      <div class="ilabel">RESUME.PDF</div>
+    </div>
+
+    <div class="dicon" id="ic-interests" onclick="openWin('interests')">
+      <div class="folder-wrap">
+        <svg viewBox="0 0 56 48" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="tabF" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFCA30"/><stop offset="100%" stop-color="#E09000"/></linearGradient>
+            <linearGradient id="bodyF" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFC020"/><stop offset="45%" stop-color="#D88800"/><stop offset="100%" stop-color="#B06000"/></linearGradient>
+            <linearGradient id="glossF" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(255,255,255,0.6)"/><stop offset="55%" stop-color="rgba(255,255,255,0.05)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></linearGradient>
+            <filter id="dropF"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="rgba(0,0,0,0.5)"/></filter>
+            <clipPath id="clipF"><rect x="1" y="13" width="54" height="33" rx="5"/></clipPath>
+          </defs>
+          <g filter="url(#dropF)">
+            <path d="M3 14 L3 9 Q3 6.5 5.5 6.5 L22 6.5 Q24.8 6.5 26.2 9.5 L29.5 14 Z" fill="url(#tabF)"/>
+            <rect x="1" y="13" width="54" height="33" rx="5" fill="url(#bodyF)"/>
+          </g>
+          <rect x="1" y="13" width="54" height="18" fill="url(#glossF)" clip-path="url(#clipF)"/>
+          <rect x="2" y="13.5" width="52" height="1.2" rx="0.6" fill="rgba(255,255,255,0.5)"/>
+          <ellipse cx="28" cy="47" rx="20" ry="2" fill="rgba(0,0,0,0.22)"/>
+        </svg>
+      </div>
+      <div class="ilabel">INTERESTS</div>
+    </div>
+
+    <div class="dicon" id="ic-contact" onclick="openWin('contact')">
+      <div class="app-wrap" style="background:#fff;">
+        <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="cg" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0%" stop-color="#ff3b30"/><stop offset="100%" stop-color="#ff6b6b"/></linearGradient>
+            <linearGradient id="ag" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0%" stop-color="#e8e8ed"/><stop offset="100%" stop-color="#d1d1d6"/></linearGradient>
+            <clipPath id="cc"><rect x="4" y="4" width="42" height="42" rx="9"/></clipPath>
+          </defs>
+          <rect x="4" y="4" width="42" height="42" rx="9" fill="#fff"/>
+          <rect x="4" y="4" width="42" height="20" fill="url(#cg)" clip-path="url(#cc)"/>
+          <circle cx="25" cy="22" r="11" fill="url(#ag)"/>
+          <circle cx="25" cy="18.5" r="5" fill="#9e9ea8"/>
+          <ellipse cx="25" cy="29" rx="8" ry="5.5" fill="#9e9ea8"/>
+          <rect x="4" y="32" width="42" height="14" fill="#fff" clip-path="url(#cc)"/>
+          <rect x="10" y="35" width="18" height="2.2" rx="1.1" fill="#1c1c1e"/>
+          <rect x="10" y="39.5" width="13" height="1.8" rx="0.9" fill="#aeaeb2"/>
+        </svg>
+      </div>
+      <div class="ilabel">CONTACT</div>
+    </div>
+
+  </div>
+
+  <!-- ===== WINDOWS ===== -->
+
+  <!-- ABOUT -->
+  <div class="win" id="win-about" style="width:490px;height:520px;">
+    <div class="wtbar" id="drag-about">
+      <div class="tls">
+        <div class="tl r" onclick="closeWin('about')"></div>
+        <div class="tl y" onclick="closeWin('about')"></div>
+        <div class="tl g"></div>
+      </div>
+      <span class="wtitle">About Me - Sakshaam Sharma</span>
+    </div>
+    <div class="wbody">
+      <div class="photobanner">
+        <img src="https://placehold.co/490x200/2a1f38/ffffff?text=Sakshaam+Sharma" alt="Sakshaam Sharma"/>
+      </div>
+      <div class="wcontent">
+        <div class="bigname">Sakshaam Sharma</div>
+        <div class="pills">
+          <span class="pill">IIM Bangalore</span>
+          <span class="pill">CFA L1 Candidate</span>
+          <span class="pill">Class of 2028</span>
+        </div>
+        <div class="bodytext">
+          <p>BBA student at <strong>IIM Bangalore</strong> specialising in Digital Business &amp; Entrepreneurship. Simultaneously pursuing B.Com (Hons) from Delhi University.</p>
+          <p>Investment Banking Fellow at Marquee Equity. Founder of <strong>Obsidian</strong> - a streetwear clothing brand built from scratch.</p>
+          <p>Passionate about financial markets, venture capital, brand building, and AI. Currently preparing for <strong>CFA Level I</strong> (Exam 2026).</p>
+          <p>Fluent in English and Hindi. Open to opportunities in finance, strategy, and entrepreneurship.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="win" id="win-edu" style="width:490px;height:480px;">
+    <div class="wtbar" id="drag-edu">
+      <div class="tls">
+        <div class="tl r" onclick="closeWin('edu')"></div>
+        <div class="tl y" onclick="closeWin('edu')"></div>
+        <div class="tl g"></div>
+      </div>
+      <span class="wtitle">Education - Sakshaam Sharma</span>
+    </div>
+    <div class="wbody">
+      <div class="photobanner ph-sm">
+        <img src="https://placehold.co/490x100/2a1f38/ffffff?text=Education" alt=""/>
+      </div>
+      <div class="wcontent">
+        <div class="bigname bns">Education</div>
+        <div class="expblock">
+          <div class="exphd"><span class="expco">IIM Bangalore</span><span class="expdt">2025 - 2028</span></div>
+          <div class="exprole">BBA - Digital Business &amp; Entrepreneurship</div>
+        </div>
+        <hr class="divline">
+        <div class="expblock">
+          <div class="exphd"><span class="expco">Delhi University - SOL</span><span class="expdt">2024 - 2028</span></div>
+          <div class="exprole">B.Com (Hons)</div>
+        </div>
+        <hr class="divline">
+        <div class="expblock">
+          <div class="exphd"><span class="expco">Delhi Public School, Ghaziabad</span><span class="expdt">2024</span></div>
+          <div class="exprole">CBSE Class XII</div>
+        </div>
+        <hr class="divline">
+        <div class="expblock" style="margin-bottom:0;">
+          <div class="exphd"><span class="expco">CFA Level I Candidate</span><span class="expdt">Exam 2026</span></div>
+          <div class="exprole">Ethics - Financial Reporting - Quantitative Methods</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="win" id="win-exp" style="width:490px;height:510px;">
+    <div class="wtbar" id="drag-exp">
+      <div class="tls">
+        <div class="tl r" onclick="closeWin('exp')"></div>
+        <div class="tl y" onclick="closeWin('exp')"></div>
+        <div class="tl g"></div>
+      </div>
+      <span class="wtitle">Experience - Sakshaam Sharma</span>
+    </div>
+    <div class="wbody">
+      <div class="photobanner ph-sm">
+        <img src="https://placehold.co/490x100/2a1f38/ffffff?text=Experience" alt=""/>
+      </div>
+      <div class="wcontent">
+        <div class="bigname bns">Experience</div>
+        <div class="expblock">
+          <div class="exphd"><span class="expco">Marquee Equity</span><span class="expdt">Nov 2025 - Present</span></div>
+          <div class="exprole">Investment Banking Fellow</div>
+          <ul class="expli">
+            <li>Prepared investor materials - pitch decks, financial summaries, market analysis.</li>
+            <li>Researched comps, funding trends and startup financial models for deal execution.</li>
+          </ul>
+        </div>
+        <hr class="divline">
+        <div class="expblock" style="margin-bottom:0;">
+          <div class="exphd"><span class="expco">Obsidian - Streetwear Brand</span><span class="expdt">Jul 2024 - Present</span></div>
+          <div class="exprole">Founder &amp; Owner</div>
+          <ul class="expli">
+            <li>Designed apparel, curated branding, managed sourcing, pricing and production.</li>
+            <li>Built brand identity, social media strategy and customer communication end-to-end.</li>
+            <li>Led early-stage sales, operations and brand positioning.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="win" id="win-skills" style="width:490px;height:500px;">
+    <div class="wtbar" id="drag-skills">
+      <div class="tls">
+        <div class="tl r" onclick="closeWin('skills')"></div>
+        <div class="tl y" onclick="closeWin('skills')"></div>
+        <div class="tl g"></div>
+      </div>
+      <span class="wtitle">Skills - Sakshaam Sharma</span>
+    </div>
+    <div class="wbody">
+      <div class="photobanner ph-sm">
+        <img src="https://placehold.co/490x100/2a1f38/ffffff?text=Skills" alt=""/>
+      </div>
+      <div class="wcontent">
+        <div class="bigname bns">Skills</div>
+        <div class="skillcat">Finance &amp; Strategy</div>
+        <div class="tagrow">
+          <span class="tag tb">Business Research</span>
+          <span class="tag tb">Financial Statements</span>
+          <span class="tag tb">Industry Analysis</span>
+          <span class="tag tb">Pitch Deck Eval</span>
+          <span class="tag tb">SWOT Analysis</span>
+          <span class="tag tb">Competitive Analysis</span>
+        </div>
+        <div class="skillcat">Branding &amp; Marketing</div>
+        <div class="tagrow">
+          <span class="tag tp">Brand Identity</span>
+          <span class="tag tp">Visual Branding</span>
+          <span class="tag tp">Social Media Strategy</span>
+          <span class="tag tp">Content Creation</span>
+          <span class="tag tp">Storytelling</span>
+          <span class="tag tp">Consumer Psychology</span>
+        </div>
+        <div class="skillcat">Soft Skills</div>
+        <div class="tagrow">
+          <span class="tag tg">Communication</span>
+          <span class="tag tg">Analytical Thinking</span>
+          <span class="tag tg">Problem Solving</span>
+          <span class="tag tg">Leadership</span>
+          <span class="tag tg">Adaptability</span>
+        </div>
+        <div class="skillcat">Languages</div>
+        <div class="tagrow">
+          <span class="tag to">English - Fluent</span>
+          <span class="tag to">Hindi - Native</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATES -->
+  <div class="win" id="win-certs" style="width:490px;height:480px;">
+    <div class="wtbar" id="drag-certs">
+      <div class="tls">
+        <div class="tl r" onclick="closeWin('certs')"></div>
+        <div class="tl y" onclick="closeWin('certs')"></div>
+        <div class="tl g"></div>
+      </div>
+      <span class="wtitle">Certificates - Sakshaam Sharma</span>
+    </div>
+    <div class="wbody">
+      <div class="photobanner ph-sm">
+        <img src="https://placehold.co/490x100/2a1f38/ffffff?text=Certifications" alt=""/>
+      </div>
+      <div class="wcontent">
+        <div class="bigname bns">Certifications</div>
+        <div class="certrow"><div class="certicon">&#11044;</div><div><div class="certname">McKinsey Forward Program 2025</div><div class="certsub">Structured problem-solving - Business communication - Digital collaboration</div></div></div>
+        <div class="certrow"><div class="certicon">&#127974;</div><div><div class="certname">Goldman Sachs Controllers Division - Forage</div><div class="certsub">Financial analysis - Variance review - Internal controls</div></div></div>
+        <div class="certrow"><div class="certicon">&#128200;</div><div><div class="certname">J.P. Morgan Investment Banking - Forage</div><div class="certsub">Valuation basics - Comparable analysis - Pitch-deck prep</div></div></div>
+        <div class="certrow"><div class="certicon">&#127894;</div><div><div class="certname">NCC B Certificate</div><div class="certsub">Leadership - Discipline - Teamwork</div></div></div>
+        <div class="certrow"><div class="certicon">&#128202;</div><div><div class="certname">CFA Level I Candidate - Exam 2026</div><div class="certsub">Ethics - Financial reporting basics - Quantitative methods</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERESTS -->
+  <div class="win" id="win-interests" style="width:490px;height:420px;">
+    <div class="wtbar" id="drag-interests">
+      <div class="tls">
+        <div class="tl r" onclick="closeWin('interests')"></div>
+        <div class="tl y" onclick="closeWin('interests')"></div>
+        <div class="tl g"></div>
+      </div>
+      <span class="wtitle">Interests - Sakshaam Sharma</span>
+    </div>
+    <div class="wbody">
+      <div class="photobanner ph-sm">
+        <img src="https://placehold.co/490x100/2a1f38/ffffff?text=Interests" alt=""/>
+      </div>
+      <div class="wcontent">
+        <div class="bigname bns">Interests</div>
+        <div class="tagrow" style="gap:7px;">
+          <span class="tag tb">Marketing Strategy</span>
+          <span class="tag tp">Brand Building</span>
+          <span class="tag tg">Entrepreneurship</span>
+          <span class="tag to">Financial Markets</span>
+          <span class="tag tb">Market Research</span>
+          <span class="tag tp">Venture Capital</span>
+          <span class="tag tg">Tech Startups</span>
+          <span class="tag to">Storytelling</span>
+          <span class="tag tb">Design Thinking</span>
+          <span class="tag tp">Consumer Behavior</span>
+          <span class="tag tg">Case Studies</span>
+          <span class="tag to">Business Podcasts</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="win" id="win-contact" style="width:490px;height:440px;">
+    <div class="wtbar" id="drag-contact">
+      <div class="tls">
+        <div class="tl r" onclick="closeWin('contact')"></div>
+        <div class="tl y" onclick="closeWin('contact')"></div>
+        <div class="tl g"></div>
+      </div>
+      <span class="wtitle">Contact - Sakshaam Sharma</span>
+    </div>
+    <div class="wbody">
+      <div class="photobanner ph-sm">
+        <img src="https://placehold.co/490x100/2a1f38/ffffff?text=Get+In+Touch" alt=""/>
+      </div>
+      <div class="wcontent">
+        <div class="bigname bns">Get in Touch</div>
+        <div class="crow"><span class="clbl">Phone</span><span class="cval">+91-9953221504</span></div>
+        <div class="crow"><span class="clbl">Email</span><span class="cval"><a href="mailto:sakshaam.sharma25@iimb.ac.in">sakshaam.sharma25@iimb.ac.in</a></span></div>
+        <div class="crow"><span class="clbl">LinkedIn</span><span class="cval"><a href="https://www.linkedin.com/in/sakshaam-sharma/" target="_blank">linkedin.com/in/sakshaam-sharma</a></span></div>
+        <div class="crow"><span class="clbl">Institute</span><span class="cval">IIM Bangalore</span></div>
+        <div class="crow"><span class="clbl">Location</span><span class="cval">Bangalore / Delhi, India</span></div>
+        <div class="crow"><span class="clbl">Degree</span><span class="cval">BBA - Digital Business &amp; Entrepreneurship</span></div>
+        <div class="crow"><span class="clbl">CFA</span><span class="cval">Level I Candidate - Exam 2026</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DOCK -->
+  <div id="dock-wrap">
+    <div id="dock">
+      <div class="da" onclick="openWin('about')">
+        <div class="dfolder">
+          <svg viewBox="0 0 56 48" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="dtabA" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#72C2FF"/><stop offset="100%" stop-color="#3A90E8"/></linearGradient><linearGradient id="dbodyA" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#5DBAFF"/><stop offset="100%" stop-color="#1060B8"/></linearGradient><filter id="ddropA"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.5)"/></filter><clipPath id="dclipA"><rect x="1" y="13" width="54" height="33" rx="5"/></clipPath></defs>
+            <g filter="url(#ddropA)"><path d="M3 14 L3 9 Q3 6.5 5.5 6.5 L22 6.5 Q24.8 6.5 26.2 9.5 L29.5 14 Z" fill="url(#dtabA)"/><rect x="1" y="13" width="54" height="33" rx="5" fill="url(#dbodyA)"/></g>
+            <rect x="1" y="13" width="54" height="14" fill="rgba(255,255,255,0.35)" clip-path="url(#dclipA)"/>
+            <rect x="2" y="13.5" width="52" height="1" rx="0.5" fill="rgba(255,255,255,0.5)"/>
+          </svg>
+        </div>
+        <div class="ddot"></div><div class="dtt">About Me</div>
+      </div>
+      <div class="da" onclick="openWin('edu')">
+        <div class="dfolder">
+          <svg viewBox="0 0 56 48" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="dtabB" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#DA98FF"/><stop offset="100%" stop-color="#A850F0"/></linearGradient><linearGradient id="dbodyB" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#CE88FF"/><stop offset="100%" stop-color="#7010C0"/></linearGradient><filter id="ddropB"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.5)"/></filter><clipPath id="dclipB"><rect x="1" y="13" width="54" height="33" rx="5"/></clipPath></defs>
+            <g filter="url(#ddropB)"><path d="M3 14 L3 9 Q3 6.5 5.5 6.5 L22 6.5 Q24.8 6.5 26.2 9.5 L29.5 14 Z" fill="url(#dtabB)"/><rect x="1" y="13" width="54" height="33" rx="5" fill="url(#dbodyB)"/></g>
+            <rect x="1" y="13" width="54" height="14" fill="rgba(255,255,255,0.35)" clip-path="url(#dclipB)"/>
+            <rect x="2" y="13.5" width="52" height="1" rx="0.5" fill="rgba(255,255,255,0.5)"/>
+          </svg>
+        </div>
+        <div class="ddot"></div><div class="dtt">Education</div>
+      </div>
+      <div class="da" onclick="openWin('exp')">
+        <div class="dfolder">
+          <svg viewBox="0 0 56 48" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="dtabC" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFB260"/><stop offset="100%" stop-color="#E87020"/></linearGradient><linearGradient id="dbodyC" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFA850"/><stop offset="100%" stop-color="#C04000"/></linearGradient><filter id="ddropC"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.5)"/></filter><clipPath id="dclipC"><rect x="1" y="13" width="54" height="33" rx="5"/></clipPath></defs>
+            <g filter="url(#ddropC)"><path d="M3 14 L3 9 Q3 6.5 5.5 6.5 L22 6.5 Q24.8 6.5 26.2 9.5 L29.5 14 Z" fill="url(#dtabC)"/><rect x="1" y="13" width="54" height="33" rx="5" fill="url(#dbodyC)"/></g>
+            <rect x="1" y="13" width="54" height="14" fill="rgba(255,255,255,0.35)" clip-path="url(#dclipC)"/>
+            <rect x="2" y="13.5" width="52" height="1" rx="0.5" fill="rgba(255,255,255,0.5)"/>
+          </svg>
+        </div>
+        <div class="ddot"></div><div class="dtt">Experience</div>
+      </div>
+      <div class="da" onclick="openWin('skills')">
+        <div class="dfolder">
+          <svg viewBox="0 0 56 48" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="dtabD" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#42E8CC"/><stop offset="100%" stop-color="#10C098"/></linearGradient><linearGradient id="dbodyD" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#30E0C0"/><stop offset="100%" stop-color="#007060"/></linearGradient><filter id="ddropD"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.5)"/></filter><clipPath id="dclipD"><rect x="1" y="13" width="54" height="33" rx="5"/></clipPath></defs>
+            <g filter="url(#ddropD)"><path d="M3 14 L3 9 Q3 6.5 5.5 6.5 L22 6.5 Q24.8 6.5 26.2 9.5 L29.5 14 Z" fill="url(#dtabD)"/><rect x="1" y="13" width="54" height="33" rx="5" fill="url(#dbodyD)"/></g>
+            <rect x="1" y="13" width="54" height="14" fill="rgba(255,255,255,0.35)" clip-path="url(#dclipD)"/>
+            <rect x="2" y="13.5" width="52" height="1" rx="0.5" fill="rgba(255,255,255,0.5)"/>
+          </svg>
+        </div>
+        <div class="ddot"></div><div class="dtt">Skills</div>
+      </div>
+      <div class="dsep"></div>
+      <div class="da" onclick="openWin('certs')">
+        <div class="dfolder">
+          <svg viewBox="0 0 56 48" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="dtabE" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFE040"/><stop offset="100%" stop-color="#E0A800"/></linearGradient><linearGradient id="dbodyE" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFD830"/><stop offset="100%" stop-color="#B07800"/></linearGradient><filter id="ddropE"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.5)"/></filter><clipPath id="dclipE"><rect x="1" y="13" width="54" height="33" rx="5"/></clipPath></defs>
+            <g filter="url(#ddropE)"><path d="M3 14 L3 9 Q3 6.5 5.5 6.5 L22 6.5 Q24.8 6.5 26.2 9.5 L29.5 14 Z" fill="url(#dtabE)"/><rect x="1" y="13" width="54" height="33" rx="5" fill="url(#dbodyE)"/></g>
+            <rect x="1" y="13" width="54" height="14" fill="rgba(255,255,255,0.35)" clip-path="url(#dclipE)"/>
+            <rect x="2" y="13.5" width="52" height="1" rx="0.5" fill="rgba(255,255,255,0.5)"/>
+          </svg>
+        </div>
+        <div class="ddot"></div><div class="dtt">Certificates</div>
+      </div>
+      <div class="da" onclick="openWin('interests')">
+        <div class="dfolder">
+          <svg viewBox="0 0 56 48" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="dtabF" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFCA30"/><stop offset="100%" stop-color="#E09000"/></linearGradient><linearGradient id="dbodyF" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFC020"/><stop offset="100%" stop-color="#B06000"/></linearGradient><filter id="ddropF"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.5)"/></filter><clipPath id="dclipF"><rect x="1" y="13" width="54" height="33" rx="5"/></clipPath></defs>
+            <g filter="url(#ddropF)"><path d="M3 14 L3 9 Q3 6.5 5.5 6.5 L22 6.5 Q24.8 6.5 26.2 9.5 L29.5 14 Z" fill="url(#dtabF)"/><rect x="1" y="13" width="54" height="33" rx="5" fill="url(#dbodyF)"/></g>
+            <rect x="1" y="13" width="54" height="14" fill="rgba(255,255,255,0.35)" clip-path="url(#dclipF)"/>
+            <rect x="2" y="13.5" width="52" height="1" rx="0.5" fill="rgba(255,255,255,0.5)"/>
+          </svg>
+        </div>
+        <div class="ddot"></div><div class="dtt">Interests</div>
+      </div>
+      <div class="da" onclick="openWin('contact')">
+        <div class="dapp" style="background:#fff;">
+          <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="dcg" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0%" stop-color="#ff3b30"/><stop offset="100%" stop-color="#ff6b6b"/></linearGradient><linearGradient id="dag" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0%" stop-color="#e8e8ed"/><stop offset="100%" stop-color="#d1d1d6"/></linearGradient><clipPath id="dcc"><rect x="4" y="4" width="42" height="42" rx="9"/></clipPath></defs>
+            <rect x="4" y="4" width="42" height="42" rx="9" fill="#fff"/>
+            <rect x="4" y="4" width="42" height="20" fill="url(#dcg)" clip-path="url(#dcc)"/>
+            <circle cx="25" cy="22" r="11" fill="url(#dag)"/>
+            <circle cx="25" cy="18.5" r="5" fill="#9e9ea8"/>
+            <ellipse cx="25" cy="29" rx="8" ry="5.5" fill="#9e9ea8"/>
+            <rect x="4" y="32" width="42" height="14" fill="#fff" clip-path="url(#dcc)"/>
+            <rect x="10" y="35" width="18" height="2.2" rx="1.1" fill="#1c1c1e"/>
+            <rect x="10" y="39.5" width="13" height="1.8" rx="0.9" fill="#aeaeb2"/>
+          </svg>
+        </div>
+        <div class="ddot"></div><div class="dtt">Contact</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
